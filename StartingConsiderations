@@ -1,6 +1,8 @@
 -- links
 why reactjs
 http://www.c-sharpcorner.com/article/what-and-why-reactjs/
+https://www.sayonetech.com/blog/rise-reactjs/#.WYB4yvuGPRY
+http://betterstack.org/2016/01/12/5-reasons-why-react-js-is-awesome/
 
 Q. What is ReactJs?
 Q. When it came into existense?
@@ -11,6 +13,7 @@ Q. Now you would ask, what makes React so special?
 Q. What are the ReactJS Features?
 Q. Why ReactJS?
 Q. JSX:
+Q. What does the future hold?
 
 Q. What is ReactJs?
 React (sometimes styled React.js or ReactJS) is an open-source JavaScript library
@@ -76,3 +79,6 @@ Performance
 React does not offer any concept of a built-in container for dependency. You can use Browserify, Require JS, EcmaScript 6 modules which we can use via Babel, ReactJS-di to inject dependencies automatically.
 Testability
 ReactJS applications are super easy to test. React views can be treated as functions of the state, so we can manipulate with state we pass to the ReactJS view and take a look at the output and triggered actions, events, functions, etc.
+
+Q. What does the future hold?
+The future is ‘Web-Componentization’. React supports it and so we will have cleaner code and better modularization. This will save a lot of time and money for web-based companies, especially in huge projects which are required to be maintained for years. 
