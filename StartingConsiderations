@@ -1,3 +1,31 @@
 Q. What is ReactJs?
+Q. Why did it came into existense?
 Q  What purpose does it serve?
 Q. Why is it better in comparision with others?
+Q. Now you would ask, what makes React so special?
+Q. JSX:
+
+Q. What is ReactJs?
+React (sometimes styled React.js or ReactJS) is an open-source JavaScript library
+for building user interfaces. 
+It is maintained by Facebook, Instagram and a community of individual developers and corporations. ... 
+React processes only user interfaces in applications.
+it doesn’t make assumptions on rest of your stack so you can use it with different tech stacks.
+
+React is just a fancy library to create user interface of the website. 
+If you are aware of any MVC pattern then React is just ‘V’ of the MVC.
+
+Please note that it is not a framework. It is just a library developed by Facebook to solve some problems that they were facing.
+
+React allows developers to create large web applications that use data which can change over time, without reloading the page.
+Its main goal is to be fast, simple and scalable.
+It's used for handling view layer for web and mobile apps. ReactJS allows us to create reusable UI components.
+With React Js single page application is made easier. It is commonly used in Enterprise applications.
+
+Q. Now you would ask, what makes React so special?
+Well, with React, you don’t have to use DOM directly. 
+React will create a virtual DOM which will only update (real) DOM whenever there is any change. 
+So if you change <h1> tag of your webpage, then with React, only that section will be updated and not the entire webpage.
+
+Q. JSX:
+JSX is JavaScript syntax extension. There will HTML tag syntax used to render sub-components.
