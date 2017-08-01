@@ -1,8 +1,15 @@
+-- links
+why reactjs
+http://www.c-sharpcorner.com/article/what-and-why-reactjs/
+
 Q. What is ReactJs?
+Q. When it came into existense?
 Q. Why did it came into existense?
 Q  What purpose does it serve?
 Q. Why is it better in comparision with others?
 Q. Now you would ask, what makes React so special?
+Q. What are the ReactJS Features?
+Q. Why ReactJS?
 Q. JSX:
 
 Q. What is ReactJs?
@@ -11,16 +18,20 @@ for building user interfaces.
 It is maintained by Facebook, Instagram and a community of individual developers and corporations. ... 
 React processes only user interfaces in applications.
 it doesn’t make assumptions on rest of your stack so you can use it with different tech stacks.
+React also allows us to create reusable UI components.
 
 React is just a fancy library to create user interface of the website. 
 If you are aware of any MVC pattern then React is just ‘V’ of the MVC.
-
-Please note that it is not a framework. It is just a library developed by Facebook to solve some problems that they were facing.
 
 React allows developers to create large web applications that use data which can change over time, without reloading the page.
 Its main goal is to be fast, simple and scalable.
 It's used for handling view layer for web and mobile apps. ReactJS allows us to create reusable UI components.
 With React Js single page application is made easier. It is commonly used in Enterprise applications.
+
+Q. When it came into existense?
+It is just a library developed by Facebook to solve some problems that they were facing.
+React was first created by Jordan Walke, a software engineer working for Facebook. 
+React first deployed on Facebook’s newsfeed in 2011 and on Instagram.com in 2012.
 
 Q. Now you would ask, what makes React so special?
 Well, with React, you don’t have to use DOM directly. 
@@ -29,3 +40,39 @@ So if you change <h1> tag of your webpage, then with React, only that section wi
 
 Q. JSX:
 JSX is JavaScript syntax extension. There will HTML tag syntax used to render sub-components.
+
+Q. What are the ReactJS Features?
+JSX
+In React, instead of using regular JavaScript for templating, it uses JSX. 
+JSX is simple JavaScript which allows HTML quoting and uses these HTML tag syntax to render subcomponents. 
+HTML syntax is processed into JavaScript calls of React Framework. We can also write in pure old JavaScript.
+
+React Native
+React has native libraries which were announced by Facebook in 2015, 
+which provides the react architecture to native applications like IOS, Android and UPD.
+
+Single-Way data flow
+In React, a set of immutable values are passed to the components renderer as properties in its HTML tags. 
+Component cannot directly modify any properties but can pass a call back function with help of which we can do modifications.
+This complete process is known as “properties flow down; actions flow up”.
+
+Virtual Document Object Model
+React creates an in-memory data structure cache which computes the changes made and then updates the browser. 
+This allows a special feature which enable programmer to code as if whole page is render on each change,
+where as react library only render components which actually change.
+
+Q. Why ReactJS?
+Now, the main question arises in front of us is why one should use ReactJS. There are so many open-source platforms for making the front-end web application development easier, like Angular. Let us take a quick look on the benefits of React over other competitive technologies or frameworks. With the front-end world changing on a daily basis, it’s hard to devote time to learning a new framework – especially when that framework could ultimately become a dead end. So, if you're looking for the next best thing but you're feeling a little bit lost in the framework jungle, I suggest checking out React.
+
+Simplicity
+ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.
+Easy to learn
+Anyone with a basic previous knowledge in programming can easily understand React while Angular and Ember are referred to as ‘Domain specific Language’, implying that it is difficult to learn them. For react you just need basic knowledge of CSS and HTML.
+Native Approach
+React can be used to create mobile applications (React Native). And React is a diehard fan of reusability, meaning extensive code reusability is supported. So at the same time we can make IOS, Android and Web application.
+Data Binding
+React uses one-way data binding and an application architecture called Flux controls the flow of data to components through one control point – the dispatcher. It's easier to debug self-contained components of large ReactJS apps.
+Performance
+React does not offer any concept of a built-in container for dependency. You can use Browserify, Require JS, EcmaScript 6 modules which we can use via Babel, ReactJS-di to inject dependencies automatically.
+Testability
+ReactJS applications are super easy to test. React views can be treated as functions of the state, so we can manipulate with state we pass to the ReactJS view and take a look at the output and triggered actions, events, functions, etc.
