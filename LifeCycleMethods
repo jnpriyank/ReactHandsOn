@@ -9,6 +9,12 @@ class Timer extends React.Component
         this.state = { timeElapsed: 0};
         console.log(this.state);
         console.log(this.props);
+        /* will not be available
+        console.log('nextProps');
+        console.log(nextProps);
+        console.log('nextState');        
+        console.log(nextState);
+        */
     }
     
 	tick(){
@@ -16,7 +22,16 @@ class Timer extends React.Component
     }
 
 	// component will not update, initial render and forupdate works.
-	//shouldComponentUpdate(){    	return false;    }
+    //shouldComponentUpdate(nextProps,nextState){    return false;    }
+	shouldComponentUpdate(nextProps,nextState){    
+    	console.log('nextProps');
+        console.log(nextProps);
+        console.log('nextState');        
+        console.log(nextState);
+    // here you can compare previous and next props and state values and
+    // decide what should be done.
+    return false;
+    }
     //componentWillMount(){}
     componentDidMount(){
     //this.interval = setInterval(this.tick,1000);	// not working
