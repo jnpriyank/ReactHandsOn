@@ -1,1 +1,6 @@
 
+if you will change state inside the render method it will give you method call exceeded error.
+cannot use this before super in constructor.
+if we want to access props then we have to pass it in construtor and super.
+life cycle events name contains will means before, did means after.
+you have prevState, nextState and prevProps, nextProps that you can use to compare or change the current props and states.
