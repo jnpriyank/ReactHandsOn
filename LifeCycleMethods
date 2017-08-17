@@ -116,3 +116,59 @@ class Timer extends React.Component
 }
 
 ReactDOM.render(<Timer name='prop'/>,mountNode);
+
+
+/*Todo App My Version*/
+class TodoApp extends React.Component{
+	constructor(props){
+    	super(props);
+        this.state = {
+        ItemName: '',
+        Items: []
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleItemAdd = this.handleItemAdd.bind(this);
+        //console.log(this);
+    }
+
+	handleChange(e){
+		//console.log('handleChange');
+        //console.log(this);
+        this.setState({ItemName: e.target.value});
+	}
+
+	handleItemAdd(e){
+    this.setState((prevState)=>({
+    Items: prevState.Items.concat(this.state.ItemName)
+    }));
+    console.log(this);
+    }
+
+	render(){
+    	this.renderCount = this.renderCount || 0;
+        this.renderCount++;
+    	return <div>
+        		    <h3>Todo App (renderCount: {this.renderCount})</h3>
+        			<div><input id='txtTodoItem' value={this.state.ItemName} onChange={this.handleChange} /></div>
+                	<div><input type='button' value='Add Item' onClick={this.handleItemAdd}/></div>
+                	<div>
+                	<ul>
+                		<ToDoListItem items={this.state.Items}/>
+                	</ul>
+                	</div>
+               </div>;
+    }
+}
+
+class ToDoListItem extends React.Component
+{
+	render(){
+    	return (
+        <div>
+        {this.props.items.map((item)=>(<li>{item}</li>))}
+        </div>
+        );
+    }
+}
+
+ReactDOM.render(<TodoApp/>, mountNode);
