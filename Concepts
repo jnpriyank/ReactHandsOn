@@ -4,3 +4,5 @@ cannot use this before super in constructor.
 if we want to access props then we have to pass it in construtor and super.
 life cycle events name contains will means before, did means after.
 you have prevState, nextState and prevProps, nextProps that you can use to compare or change the current props and states.
+if our state object contains more than one properties and we give any particular property in setState, it updates only that property.
+In render method if there are more than one tags then it should be enclosed in a parent tag or element.
